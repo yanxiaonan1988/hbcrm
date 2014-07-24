@@ -10,7 +10,7 @@ var customerSchema = new Schema({
 	papers: [{paperType: String, paperNo: String, authCntry: String, authOrg: String, startDate: Date, endDate: Date}],
 	contacts: [{contactType: String, contactValue: String}],
 	addresses: [{addressType: String, addressValue: String, postCode: String}],
-	tags: [tagName: String],
+	tags: [{tagName: String}],
 	moneyLaundering: String, //code
 	salesStat: String, //code table
 	salesStatDate: Date,
@@ -51,7 +51,7 @@ var customerSchema = new Schema({
 		regFund: Number,
 		corpRepres: String,
 		bizScope: String,
-		bizTerm:
+		bizTerm: String
 	},
 	createdDate: Date,
 	updatedDate: Date
